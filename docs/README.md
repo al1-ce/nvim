@@ -2,11 +2,15 @@
 
 Initially it was monolith.nvim, later I decided to do "pluginless" distro to learn stuff and to just have it. Well, now I thought of why the hell I am even doing two separate things with [complicated script](https://github.com/al1-ce/dotfiles/blob/master/.dotfiles/scripts/nvim-sync-distros) to keep them in sync with each other. The conclusion is just to use `if` statements...
 
+I know it's creative naming but despair.nvim comes from [/colors/despair.vim] colorscheme (based on austere) because both distro and colorscheme are minimal and would drive anyone except me to desperation. And monolith.nvim comes from some thought about config and distro itself being monolithic and tbh idk what I meant by that.
+
 Main difference between the two is:
-1. Monolith uses Lazy, Despair doesnt (I know, creative naming)
+1. Monolith uses Lazy, Despair doesnt
 2. plugin/des/ and plugin/mon/ directories
 
-And that's absolutely it. Most of 
+And that's absolutely it.
+
+This readme is amalgamation of readmes from both distros and wouldn't make much sense but I don't care. Why are you here anyway? This file is for me to not loose mind over what is what.
 
 ## monolith.nvim
 
@@ -14,7 +18,7 @@ A sister-project of despair.nvim.
 
 The original personal nvim distro. Many plugins (there were much more before, see old commits or [old readme](OLD-README.md)).
 
-This distro will still kind of be here but it won't be the main one since I found it nice to have it more minimal with my other personal distro [despair.nvim](https://github.com/al1-ce/despair.nvim).
+This distro will still kind of be here but it won't be the main one since I found it nice to have it more minimal with my other personal distro despair.nvim.
 
 ## Dependencies
 
@@ -79,10 +83,17 @@ Both distros share everything from Despair with exception of `plugin/des` which 
 ## Notice
 
 #### This distro is not supposed or intended to be perfect out of the box experience. It is preconfigured to be vanilla-like friendly experience, but for your personal needs changing configs will be required.
-#### If this doesn't suit you then please look at [other NeoVim distributions](#other-neovim-distributions)
 
-## Other NeoVim distributions
+#### You'd be way better by using other distros:
 - [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 - [CosmicNvim](https://github.com/CosmicNvim/CosmicNvim)
 - [LunarVim](https://github.com/LunarVim/LunarVim)
 - [NvChad](https://github.com/NvChad/NvChad)
+- [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
+- [LazyVim](https://github.com/LazyVim/LazyVim)
+- [CyberNvim](https://github.com/pgosar/CyberNvim)
+
+Because this config is for me and my kind of workflow. I'd highly recommend to learn and assemble your own thing with best starting point being [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim).
+
+Fun fact. Originally all this was a single vimscript file that used Plug and two-three plugins to make life easier.
+
