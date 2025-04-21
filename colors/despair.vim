@@ -46,6 +46,7 @@ hi  CursorLine               term=none               ctermfg=gray      cterm=non
 hi  CursorLineNr             term=none               ctermfg=gray      cterm=none      guifg=#f7f7f7 gui=none      guibg=#101010
 hi  LineNr                   term=none               ctermfg=gray      cterm=none      guifg=#b9b9b9 gui=none      guibg=#101010
 hi  Number                   term=bold               ctermfg=blue      cterm=none      guifg=#5f819d gui=bold      guibg=#101010
+hi  Boolean                  term=bold               ctermfg=blue      cterm=none      guifg=#5f819d gui=bold      guibg=#101010
 hi  Operator                 term=bold               ctermfg=white     cterm=bold      guifg=#b9b9b9 gui=bold      guibg=#101010
 hi  Pmenu                    term=none               ctermfg=white     cterm=none      guifg=#b9b9b9 gui=none      guibg=#252525
 hi  PmenuSbar                term=none               ctermfg=white     cterm=none      guifg=#b9b9b9 gui=none      guibg=#252525
@@ -70,7 +71,6 @@ hi! link                     DiagnosticUnderlineOk   DiagnosticUnderlineError
 hi! link                     DiagnosticUnderlineWarn DiagnosticUnderlineError
 hi! link                     @module.d               Normal
 hi! link                     @variable               Normal
-hi! link                     Boolean                 Normal
 hi! link                     Character               String
 hi! link                     ColorColumn             Normal
 hi! link                     Conditional             Normal

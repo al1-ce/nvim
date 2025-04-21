@@ -1,3 +1,5 @@
+if vim.g.vim_distro ~= "monolith.nvim" then return end
+
 -- Based on https://github.com/nvimdev/hlsearch.nvim
 
 local api, fn = vim.api, vim.fn

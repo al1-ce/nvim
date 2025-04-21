@@ -1,3 +1,4 @@
+-- Globals
 local module = require("lib.mod")
 _G.include = function(mod) module.load(mod) end
 local function iter_to_array(iter)

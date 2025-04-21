@@ -1,4 +1,4 @@
-if vim.g.vim_distro ~= "monolith.nvim" then return end
+if vim.g.vim_distro ~= "despair.nvim" then return end
 
 -- from: https://github.com/Bekaboo/nvim
 
@@ -14,8 +14,7 @@ local eventignore = vim.go.eventignore
 vim.go.eventignore = 'all'
 
 -- local logo = vim.g.modern_ui and 'M Λ C R O' or 'M A C R O'
--- local logo =                                    'D E S P A I R'
-local logo =                                    'M O N O L I T H'
+local logo =                                    'D E S P A I R'
 
 ---@class intro_chunk_t
 ---@field text string
@@ -150,4 +149,3 @@ vim.api.nvim_create_autocmd({
 
 -- Restore &eventignore before exit
 vim.go.eventignore = eventignore
-

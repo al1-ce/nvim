@@ -1,3 +1,4 @@
+-- Templates
 local M = {}
 
 local can_load = require("lib.mod").can_load

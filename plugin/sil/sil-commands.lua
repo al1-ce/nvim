@@ -52,4 +52,8 @@ vim.api.nvim_create_user_command("SetColorscheme", function (opts)
     require("lib.col").set(args)
 end, { range = false, nargs = 1 })
 
+vim.api.nvim_create_user_command("SwitchDistro", function (opts)
+    require("lib.ver").set()
+end, { range = false, nargs = 0 })
+
 

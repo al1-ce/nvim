@@ -1,3 +1,5 @@
+if vim.g.vim_distro ~= "monolith.nvim" then return end
+
 local vim_keymap_set = vim.keymap.set
 
 -- function __FILE__() return debug.getinfo(2, 'S').source end

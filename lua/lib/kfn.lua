@@ -1,3 +1,4 @@
+-- Key functions
 local M = {}
 
 M.line_len = function(c_row)

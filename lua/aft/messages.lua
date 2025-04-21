@@ -18,7 +18,8 @@ if can_load("notify") then
     local nvim_err_writeln = vim.api.nvim_err_writeln
     local nvim_echo = vim.api.nvim_echo
 
-    vim.notify = notify
+    ---@diagnostic disable-next-line: param-type-mismatch
+    vim.notify = vim.schedule_wrap(notify)
 
     vim.api.nvim_err_write = function(message)
         notify(message, vim.log.levels.ERROR)

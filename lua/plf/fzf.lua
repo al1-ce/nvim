@@ -1,3 +1,4 @@
+-- FZF
 ---@diagnostic disable: duplicate-set-field
 local can_load = require("lib.mod").can_load
 

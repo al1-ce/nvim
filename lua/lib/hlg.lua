@@ -1,3 +1,4 @@
+-- Highlight groups
 local function get_hl_group(group_name)
 	local group_id = vim.fn.synIDtrans(vim.fn.hlID(group_name));
 	return {

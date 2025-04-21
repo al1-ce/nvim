@@ -1,3 +1,4 @@
+-- Async
 local M = {}
 
 -- Creating a simple setTimeout wrapper

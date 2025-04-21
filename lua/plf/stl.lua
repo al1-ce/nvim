@@ -1,3 +1,4 @@
+-- Statusline
 local hl = require("lib.hlg")
 
 -- Basic theme definition
