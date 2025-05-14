@@ -19,34 +19,34 @@ return {
         }
     },
     -- better macros
-    {
-        "chrisgrieser/nvim-recorder",
-        dependencies = { "rcarriga/nvim-notify" },
-        opts = {
-            slots = { "a", "b" },
-            mapping = {
-                startStopRecording = "q",
-                playMacro = "Q",
-                switchSlot = "<C-q>",
-                editMacro = "cq",
-                deleteAllMacros = "dq",
-                yankMacro = "yq",
-                addBreakPoint = "##",
-            },
-            clear = false,
-            logLevel = vim.log.levels.DEBUG,
-            lessNotifications = true,
-            useNerdfontIcons = false,
-            performanceOpts = {
-                countThreshold = 100,
-                lazyredraw = false,        -- enable lazyredraw (see `:h lazyredraw`)
-                noSystemClipboard = false, -- remove `+`/`*` from clipboard option
-                autocmdEventsIgnore = {    -- temporarily ignore these autocmd events
-                },
-            },
-            dapSharedKeymaps = false,
-        }
-    },
+    -- {
+    --     "chrisgrieser/nvim-recorder",
+    --     dependencies = { "rcarriga/nvim-notify" },
+    --     opts = {
+    --         slots = { "a", "b" },
+    --         mapping = {
+    --             startStopRecording = "q",
+    --             playMacro = "Q",
+    --             switchSlot = "<C-q>",
+    --             editMacro = "cq",
+    --             deleteAllMacros = "dq",
+    --             yankMacro = "yq",
+    --             addBreakPoint = "##",
+    --         },
+    --         clear = false,
+    --         logLevel = vim.log.levels.DEBUG,
+    --         lessNotifications = true,
+    --         useNerdfontIcons = false,
+    --         performanceOpts = {
+    --             countThreshold = 100,
+    --             lazyredraw = false,        -- enable lazyredraw (see `:h lazyredraw`)
+    --             noSystemClipboard = false, -- remove `+`/`*` from clipboard option
+    --             autocmdEventsIgnore = {    -- temporarily ignore these autocmd events
+    --             },
+    --         },
+    --         dapSharedKeymaps = false,
+    --     }
+    -- },
     {
         "selectnull/plugin-readme.nvim",
         dependencies = {

@@ -72,9 +72,9 @@ noremap("v", "<Del>", '"_x', { desc = "Deletes into black hole" });
 
 noremap("n", "<leader>fs", "<cmd>exe v:count ? v:count .. 'b' : 'b' .. (bufloaded(0) ? '#' : 'n')<cr>", { desc = "[F]ile [S]wap" })
 
-noremap("n", "<leader>fe", "<cmd>enew<cr>",  { desc = "[F]ile [E]dit" })
-noremap("n", "<leader>q", keyfunc.quit_buf,      { desc = "[Q]uits buffer" })
-noremap("n", "<leader>w", "<CMD>update<CR>", { desc = "[W]rites buffer" })
+noremap("n", "<leader>fe", "<cmd>enew<cr>",   { desc = "[F]ile [E]dit" })
+noremap("n", "<leader>q",  "<cmd>q<cr>",      { desc = "[Q]uits buffer" })
+noremap("n", "<leader>w",  "<CMD>update<CR>", { desc = "[W]rites buffer" })
 
 -- - ---------------------------------------------------------------------------- -
 -- -                               Quick navigation                               -

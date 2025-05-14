@@ -35,7 +35,7 @@ return {
         cmd = "Ouroboros",
         ft = { "c", "cpp" },
         keys = {
-            { "<leader>gh", "<cmd>Ouroboros<cr>", mode = "n", noremap = true, silent = true, desc = "Switch to header", ft = { "c", "cpp" } },
+            { "gh", "<cmd>Ouroboros<cr>", mode = "n", noremap = true, silent = true, desc = "Switch to header", ft = { "c", "cpp" } },
         }
     },
     {

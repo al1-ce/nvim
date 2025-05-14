@@ -1,7 +1,9 @@
-if vim.g.vim_distro ~= "despair.nvim" then return end
+-- if vim.g.vim_distro ~= "despair.nvim" then return end
 
 local hl = require("lib.hlg")
 local ti = require("lib.tim")
+
+local despair_statusline_reload_interval = nil
 
 local gen_hl_groups = function()
     local colors = {

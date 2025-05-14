@@ -1,4 +1,10 @@
 ---@diagnostic disable: undefined-field
+return {}
+
+-- use des-statusline instead
+
+--[[
+
 local hl = require("lib.hlg")
 
 local red_means_looping
@@ -108,5 +114,5 @@ return {
     },
 
 }
-
+]]
 
