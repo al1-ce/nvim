@@ -1,5 +1,5 @@
-local bufnoremap = require("lib.map").bufnoremap
-local bufremap = require("lib.map").bufremap
+local bufnoremap = require("lib.remap").bufnoremap
+local bufremap   = require("lib.remap").bufremap
 
 -- nr("s", "o")
 bufremap("n", ".", "gh")

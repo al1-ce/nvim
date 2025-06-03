@@ -1,39 +1,30 @@
-require("lib.glb")
+---@diagnostic disable
 
--- vim.g.vim_distro     = "despair.nvim"
--- vim.g.vim_distro     = "monolith.nvim"
-include "lib.ver"
+require("lib.global")
+
+if vim.g.vim_distro == "despair.nvim" then
+    vim.treesitter.start = function(_b, _n) end
+end
+
+include "lib.version"
 
 vim.g.mapleader      = ";"
 vim.g.maplocalleader = ","
 
-include "opt.opt"
-include "lib.col"
+include "config.options"
+include "lib.colorscheme"
 
 if vim.g.vim_distro == "monolith.nvim" then
-    -- options and local plugins
-    include "lib.sdp"
-
+    include "lib.depend"
 end
 
--- des.nv load after because of big slowdown
-include "opt.key"
+include "config.keymap"
 
 if vim.g.vim_distro == "monolith.nvim" then
-    include "plf.lzy"
-
-    -- plugins and pluin accessories
-    include "aft.src"
+    include "pfunc.lazy"
+    include "after.loader"
 
     -- todo
     -- check yukimemi/dvpm
 end
-
--- if vim.g.vim_distro == "despair.nvim" then end
-
--- aft - after
--- lib - library
--- opt - options (config)
--- plf - plugin files
--- plg - plugin configs
 

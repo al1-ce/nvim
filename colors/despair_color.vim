@@ -132,5 +132,7 @@ hi! link                     cDefine                 Define
 hi! link                     @lsp.type.macro.cpp     NormalBold
 hi! link                     cConditional            Statement
 hi! link                     cRepeat                 Statement
-
+hi! link                     StorageClass            Type
+hi! link                     Repeat                  Statement
+hi! link                     Conditional             Statement
 
