@@ -2,8 +2,10 @@
 
 -- prevent double execution
 local executed
-if executed ~= nil then return end
-executed = true
+if vim.g.intro_executed ~= nil then return end
+vim.g.intro_executed = true
+
+vim.notify("aaaaaa")
 
 -- Disable default intro message
 vim.opt.shortmess:append('I')
