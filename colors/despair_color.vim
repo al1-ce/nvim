@@ -135,4 +135,6 @@ hi! link                     cRepeat                 Statement
 hi! link                     StorageClass            Type
 hi! link                     Repeat                  Statement
 hi! link                     Conditional             Statement
-
+hi! link                     javaScriptReserved      Statement
+hi! link                     javaScriptFunction      Statement
+hi! link                     javaScriptLabel         Statement
