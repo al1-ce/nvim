@@ -52,7 +52,7 @@ return {
 
             -- https://github.com/williamboman/mason-lspconfig.nvim#automatic-server-setup-advanced-feature
             masonconf.setup({
-                ensure_installed = { 'lua_ls', 'jsonls', 'serve_d', 'marksman', 'cmake', 'clangd', 'bashls', 'vimls', },
+                ensure_installed = { 'lua_ls', 'jsonls', 'marksman', 'cmake', 'bashls', 'vimls', },
                 automatic_installation = true,
                 handlers = {
                     function(server_name)

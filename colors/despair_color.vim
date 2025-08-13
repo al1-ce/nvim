@@ -76,6 +76,7 @@ hi Error           ctermfg=red        cterm=none      guifg=#101010 gui=none    
 hi DiagnosticUnderlineError term=underline ctermfg=none cterm=underline guifg=none gui=underline guibg=none guisp=none
 "hi  StatusLine               term=none               ctermfg=white    cterm=underline guifg=#b9b9b9 gui=underline guibg=#101010
 "hi  StatusLineNC             term=none               ctermfg=darkgray cterm=underline guifg=#6e6e6e gui=underline guibg=#101010
+
 hi! link DiagnosticUnderlineHint DiagnosticUnderlineError
 hi! link DiagnosticUnderlineInfo DiagnosticUnderlineError
 hi! link DiagnosticUnderlineOk   DiagnosticUnderlineError
@@ -131,3 +132,4 @@ for path in split(&runtimepath, ",")
         execute "source " . path . "/colors/syntax_override.vim"
     endif
 endfor
+
