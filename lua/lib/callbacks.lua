@@ -1,8 +1,12 @@
 -- Key functions
 local M = {}
 
+local function utf8len(s)
+    return select(2, s:gsub('[^\128-\193]', ''))
+end
+
 M.line_len = function(c_row)
-    return #(vim.api.nvim_buf_get_lines(0, c_row, c_row + 1, false)[1])
+    return utf8len(vim.api.nvim_buf_get_lines(0, c_row, c_row + 1, false)[1])
 end
 
 M.delete_char = function(is_backspace)
@@ -72,9 +76,9 @@ end
 local function pad_string_vis(s)
     local o = s:match("^%s*(.*)"):match("(.-)%s*$")
     local ll = 76
-    local lp = math.floor((ll - #o) / 2)
+    local lp = math.floor((ll - utf8len(o)) / 2)
     local rp = lp
-    if (lp + rp + #o) ~= ll then rp = rp + 1 end
+    if (lp + rp + utf8len(o)) ~= ll then rp = rp + 1 end
     o = string.format("- %" .. tostring(lp) .. "s%s%" .. tostring(rp) .. "s -", " ", o, " ")
     return o
 end
@@ -82,9 +86,9 @@ end
 local function pad_string_nor(s)
     local o = s:match("^%s*(.*)"):match("(.-)%s*$")
     local ll = 74
-    local lp = math.floor((ll - #o) / 2)
+    local lp = math.floor((ll - utf8len(o)) / 2)
     local rp = lp
-    if (lp + rp + #o) ~= ll then rp = rp + 1 end
+    if (lp + rp + utf8len(o)) ~= ll then rp = rp + 1 end
     o = "- " .. string.rep("-", lp) .. " " .. o .. " " .. string.rep("-", rp) .. " -"
     return o
 end

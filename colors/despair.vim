@@ -63,7 +63,7 @@ hi  Visual                   term=none               ctermfg=none      cterm=rev
 hi  VisualNOS                term=none               ctermfg=white     cterm=none      guifg=#b9b9b9 gui=none      guibg=#252525
 hi  DiagnosticUnderlineError term=underline          ctermfg=none      cterm=underline guifg=none    gui=underline guibg=none    guisp=none
 hi  ExtraWhitespace          term=underline          ctermfg=red       cterm=underline guifg=#ce5253 gui=underline guibg=#2f1515
-hi  Error                    term=none               ctermfg=red       cterm=none      guifg=none    gui=none      guibg=#ce5252
+hi  Error           ctermfg=red        cterm=none      guifg=#101010 gui=none      guibg=#ce5252
 "hi  StatusLine               term=none               ctermfg=white    cterm=underline guifg=#b9b9b9 gui=underline guibg=#101010
 "hi  StatusLineNC             term=none               ctermfg=darkgray cterm=underline guifg=#6e6e6e gui=underline guibg=#101010
 hi! link                     DiagnosticUnderlineHint DiagnosticUnderlineError

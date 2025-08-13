@@ -171,6 +171,8 @@ syn match dMacro "\<[A-Z0-9_]\+\>" contained
 " HACK: forced type highlight
 " FIXME: forced type highlight
 syn match dType "\<[A-Z][_a-zA-Z0-9]\+\>" contains=dMacro
+" syn match dCustomDFunc "\zs\(\k\w*\)*\ze\!"
+" syn match dCustomFunc  "\zs\(\k\w*\)*\s*\ze("
 
 " Necessary to highlight C++ in extern modifiers.
 syn match dExternIdentifier "C\(++\)\?" contained
@@ -192,6 +194,8 @@ syn cluster dTokens add=dType,dDebug,dExceptions,dScopeDecl,dStatement
 syn cluster dTokens add=dStorageClass,dPragma,dAssert,dAnnotation,dEnum
 syn cluster dTokens add=dParenString,dBrackString,dAngleString,dCurlyString
 syn cluster dTokens add=dTokenString,dDelimString,dHereString
+
+syn cluster dTokens add=dCustomFunc,dCustomDFunc
 
 " Create a match for parameter lists to identify storage class
 syn region paramlist start="(" end=")" contains=@dTokens
@@ -230,7 +234,7 @@ hi link dNestedCommentString	dString
 hi link dCommentStar		dBlockComment
 hi link dCommentPlus		dNestedComment
 
-syn cluster dTokens add=dBlockComment,dNestedComment,dLineComment
+syn cluster dTokens add=dCommentStar,dCommentPlus,dBlockComment,dNestedComment,dLineComment
 
 " /+ +/ style comments and strings that span multiple lines can cause
 " problems. To play it safe, set minlines to a large number.
@@ -407,6 +411,8 @@ hi def link dPragmaIdentifier    Identifier
 hi def link dExtern              dExternal
 hi def link dExternIdentifier    Identifier
 hi def link dMacro               Macro
+" hi def link dCustomFunc          Function
+" hi def link dCustomDFunc         Function
 
 " Marks contents of the asm statement body as special
 

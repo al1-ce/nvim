@@ -56,4 +56,6 @@ vim.api.nvim_create_user_command("SwitchDistro", function (opts)
     require("lib.ver").set()
 end, { range = false, nargs = 0 })
 
+-- vim.api.nvim_create_user_command('W', [[execute 'w !sudo -S tee % > /dev/null' <bar> edit!]], { range = false, nargs = 0 })
+
 

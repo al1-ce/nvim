@@ -9,45 +9,46 @@ else
 end
 
 
-vim.o.background            = "dark" -- or "light" for light mode
-vim.o.clipboard             = "unnamedplus" -- set clipboard to be system
-vim.o.mouse                 = "nvi" -- normal, visual, insert
-vim.o.mousemodel            = "extend" -- sets right mouse click to extend selection
-vim.o.signcolumn            = "no" -- removes gutter
-vim.o.virtualedit           = "onemore,block" -- allow to go a single char after eol and allow better C-v
-vim.o.linebreak             = true -- wraps lines by words (softbreak)
-vim.o.cursorlineopt         = "screenline"
-vim.o.laststatus            = 3
-vim.o.path                  = vim.o.path .. ",**"
-vim.o.completeopt           = "menuone,menu,longest,preview"
-vim.o.foldmethod            = 'manual'
+vim.o.background    = "dark" -- or "light" for light mode
+vim.o.clipboard     = "unnamedplus" -- set clipboard to be system
+vim.o.mouse         = "nvi" -- normal, visual, insert
+vim.o.mousemodel    = "extend" -- sets right mouse click to extend selection
+vim.o.signcolumn    = "no" -- removes gutter
+vim.o.virtualedit   = "onemore,block" -- allow to go a single char after eol and allow better C-v
+vim.o.linebreak     = true -- wraps lines by words (softbreak)
+vim.o.cursorlineopt = "screenline"
+vim.o.laststatus    = 3
+vim.o.path          = vim.o.path .. ",**"
+vim.o.completeopt   = "menuone,menu,longest,preview"
+vim.o.foldmethod    = 'manual'
 -- vim.o.foldmethod            = 'expr'
+-- vim.o.scrolloff             = 7
 
-vim.opt.shortmess           = "filnxtToOF"
-vim.opt.autoread            = true   -- default value, autoreload file
-vim.opt.colorcolumn         = '0'    -- 80 symbol split
-vim.opt.cursorcolumn        = false  -- show cursor column
-vim.opt.cursorline          = true   -- cursor line hightlight
-vim.opt.expandtab           = true   -- use spaces instead of tabs
-vim.opt.hlsearch            = true   -- Set highlight on search
-vim.opt.ignorecase          = true   -- Case insensitive searching unless /C or capital in search
-vim.opt.inccommand          = "split" -- shows %s/// in split
-vim.opt.joinspaces          = false  -- No double spaces with join after a dot
-vim.opt.number              = true   -- line numbers
-vim.opt.relativenumber      = true   -- relative line numbers
-vim.opt.shiftwidth          = 4      -- shift 4 spaces when tab
-vim.opt.showmatch           = true   -- highlight matching brackets
-vim.opt.showmode            = false  -- no --INSERT--
-vim.opt.smartcase           = true   -- Smart case
-vim.opt.smartindent         = true   -- autoindent new lines
-vim.opt.so                  = 0      -- cursor moves normally (no boundary)
-vim.opt.splitbelow          = true   -- horizontal split down
-vim.opt.splitright          = true   -- vertical split right
-vim.opt.tabstop             = 4      -- 1 tab == 4 spaces
-vim.opt.undofile            = true   -- Save undo history
-vim.opt.updatetime          = 300    -- speeds up autocompletion
-vim.opt.wrap                = false  -- removes wrapping of lines
-vim.opt.termguicolors       = true
+vim.opt.shortmess      = "filnxtToOF"
+vim.opt.autoread       = true -- default value, autoreload file
+vim.opt.colorcolumn    = '0' -- 80 symbol split
+vim.opt.cursorcolumn   = false -- show cursor column
+vim.opt.cursorline     = true -- cursor line hightlight
+vim.opt.expandtab      = true -- use spaces instead of tabs
+vim.opt.hlsearch       = true -- Set highlight on search
+vim.opt.ignorecase     = true -- Case insensitive searching unless /C or capital in search
+vim.opt.inccommand     = "split" -- shows %s/// in split
+vim.opt.joinspaces     = false -- No double spaces with join after a dot
+vim.opt.number         = true -- line numbers
+vim.opt.relativenumber = true -- relative line numbers
+vim.opt.shiftwidth     = 4 -- shift 4 spaces when tab
+vim.opt.showmatch      = true -- highlight matching brackets
+vim.opt.showmode       = false -- no --INSERT--
+vim.opt.smartcase      = true -- Smart case
+vim.opt.smartindent    = true -- autoindent new lines
+vim.opt.so             = 0 -- cursor moves normally (no boundary)
+vim.opt.splitbelow     = true -- horizontal split down
+vim.opt.splitright     = true -- vertical split right
+vim.opt.tabstop        = 4 -- 1 tab == 4 spaces
+vim.opt.undofile       = true -- Save undo history
+vim.opt.updatetime     = 300 -- speeds up autocompletion
+vim.opt.wrap           = false -- removes wrapping of lines
+vim.opt.termguicolors  = true
 -- vim.o.conceallevel = 2
 -- vim.opt.shada               = "!,'20,f1,<50,s10,h" -- oldfiles config
 

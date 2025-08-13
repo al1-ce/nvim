@@ -47,13 +47,13 @@ local shebangList = {
 }
 
 local function setCustomHighlight(lang)
-    if vim.g.colors_name ~= 'despair' then return end
+    -- if vim.g.colors_name ~= 'despair' then return end
 
-    vim.cmd([[syn match   dCustomFunc     "\zs\(\k\w*\)*\s*\ze("]])
+    -- vim.cmd([[syn match   dCustomFunc     "\zs\(\k\w*\)*\s*\ze("]])
 
-    if lang == "d" then
-        vim.cmd([[syn match   dCustomDFunc     "\zs\(\k\w*\)*\ze\!"]])
-    end
+    -- if lang == "d" then
+    --     vim.cmd([[syn match   dCustomDFunc     "\zs\(\k\w*\)*\ze\!"]])
+    -- end
 end
 
 local function detectShebangPattern()
@@ -67,7 +67,8 @@ local function detectShebangPattern()
            sb:find("^#!/usr/bin/env " .. k) ~= nil or
            sb:find("^#!/usr/bin/env %-S " .. k) ~= nil then
               setft(v)
-              if vim.g.colors_name ~= 'despair' then setCustomHighlight(v) end
+              -- if vim.g.colors_name ~= 'despair' then setCustomHighlight(v) end
+              setCustomHighlight(v)
         end
     end
 end

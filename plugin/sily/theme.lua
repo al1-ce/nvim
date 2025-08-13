@@ -64,37 +64,37 @@ end
 local function colorscheme_set()
     -------------------- Highlight --------------------------------------
     -- Custom function highlight
-    highlightAll({"dCustomFunc", "dCustomDFunc"}, {link = "Function"})
-    highlight("haxeFunction", { link = "Keyword" })
+    -- highlightAll({"dCustomFunc", "dCustomDFunc"}, {link = "Function"})
+    -- highlight("haxeFunction", { link = "Keyword" })
 
-    -- Borders
-    highlightAll({
-        "LspSagaCodeActionBorder",
-        "LspSagaLspFinderBorder",
-        "FinderSpinnerBorder",
-        "DefinitionBorder",
-        "LspSagaHoverBorder",
-        "LspSagaRenameBorder",
-        "LspSagaSignatureHelpBorder",
-        "LSOutlinePreviewBorder",
-        "LspSagaGroupName",
-        "LspSagaDiagnosticError",
-        "FzfLuaBorder"
-    }, {link = "LspSagaDiagnosticBorder"})
+    -- -- Borders
+    -- highlightAll({
+    --     "LspSagaCodeActionBorder",
+    --     "LspSagaLspFinderBorder",
+    --     "FinderSpinnerBorder",
+    --     "DefinitionBorder",
+    --     "LspSagaHoverBorder",
+    --     "LspSagaRenameBorder",
+    --     "LspSagaSignatureHelpBorder",
+    --     "LSOutlinePreviewBorder",
+    --     "LspSagaGroupName",
+    --     "LspSagaDiagnosticError",
+    --     "FzfLuaBorder"
+    -- }, {link = "LspSagaDiagnosticBorder"})
 
-    highlight("SpectreHeader", {link = "Comment"})
-    highlight("SpectreBody", {link = "Normal"})
-    highlight("SpectreFile", {link = "Macro"})
-    highlight("SpectreDir", {link = "Comment"})
-    highlight("SpectreSearch", {link = "DiffChange"})
-    -- highlight("SpectreSearch", {ctermfg = 1, fg = g.terminal_color_1, italic = true})
-    highlight("SpectreBorder", {link = "Comment"})
-    highlight("SpectreReplace", {link = "DiffDelete"})
-    -- highlight("SpectreReplace", {ctermfg = 10, fg = g.terminal_color_10})
+    -- highlight("SpectreHeader", {link = "Comment"})
+    -- highlight("SpectreBody", {link = "Normal"})
+    -- highlight("SpectreFile", {link = "Macro"})
+    -- highlight("SpectreDir", {link = "Comment"})
+    -- highlight("SpectreSearch", {link = "DiffChange"})
+    -- -- highlight("SpectreSearch", {ctermfg = 1, fg = g.terminal_color_1, italic = true})
+    -- highlight("SpectreBorder", {link = "Comment"})
+    -- highlight("SpectreReplace", {link = "DiffDelete"})
+    -- -- highlight("SpectreReplace", {ctermfg = 10, fg = g.terminal_color_10})
 
 
-    highlightAll({"Search"}, {reverse = true})
-    highlightAll({"Cursor"}, {reverse = true})
+    -- highlightAll({"Search"}, {reverse = true})
+    -- highlightAll({"Cursor"}, {reverse = true})
     -- custom gruv colors
 
     local custom_colors = {
@@ -161,92 +161,92 @@ local function colorscheme_set()
         -- common syntax
 
         --  DiagnosticUnderlineWarnxxx cterm=underline gui=underline guisp=NvimLightYellow
-        highlightAll({"Normal", "NormalFloat", "FloatBorder", "cParenError", "MatchParen", "@variable", "@module.d"}, style_normal)
-        highlightAll({"Function"}, style_function)
-        highlightAll({"Delimiter", "@punctuation.delimiter.d"}, style_delimiter)
+        -- highlightAll({"Normal", "NormalFloat", "FloatBorder", "cParenError", "MatchParen", "@variable", "@module.d"}, style_normal)
+        -- highlightAll({"Function"}, style_function)
+        -- highlightAll({"Delimiter", "@punctuation.delimiter.d"}, style_delimiter)
         -- highlightAll({"@punctuation.bracket.d"}, style_special)
-        highlightAll({"Identifier"}, style_identifier)
-        highlightAll({"Label", "Conditional", "Debug", "Exception", "Include", "Repeat"}, style_keyword)
-        highlightAll({"StorageClass", "Structure", "Typedef", "Keyword", "Operator", "Statement"}, style_keyword)
-        highlightAll({"Type", "@type.builtin.d"}, style_type)
-        highlightAll({"Constant", "Boolean", "Number", "Float"}, style_const)
-        highlightAll({"String", "Character"}, style_string)
-        highlightAll({"Special", "SpecialChar"}, style_special)
-        highlightAll({"Macro", "PreProc", "Define", "Precondit"}, style_macro)
-        highlightAll({"Todo", "Tag"}, style_tag)
-        highlightAll({"Comment", "WinSeparator"}, style_comment)
+        -- highlightAll({"Identifier"}, style_identifier)
+        -- highlightAll({"Label", "Conditional", "Debug", "Exception", "Include", "Repeat"}, style_keyword)
+        -- highlightAll({"StorageClass", "Structure", "Typedef", "Keyword", "Operator", "Statement"}, style_keyword)
+        -- highlightAll({"Type", "@type.builtin.d"}, style_type)
+        -- highlightAll({"Constant", "Boolean", "Number", "Float"}, style_const)
+        -- highlightAll({"String", "Character"}, style_string)
+        -- highlightAll({"Special", "SpecialChar"}, style_special)
+        -- highlightAll({"Macro", "PreProc", "Define", "Precondit"}, style_macro)
+        -- highlightAll({"Todo", "Tag"}, style_tag)
+        -- highlightAll({"Comment", "WinSeparator"}, style_comment)
 
-        highlight("DiagnosticUnderlineError", style_underline_error)
-        highlight("DiagnosticUnderlineHint", style_underline_hint)
-        highlight("DiagnosticUnderlineInfo", style_underline_info)
-        highlight("DiagnosticUnderlineOk", style_underline_ok)
-        highlight("DiagnosticUnderlineWarn", style_underline_warning)
+        -- highlight("DiagnosticUnderlineError", style_underline_error)
+        -- highlight("DiagnosticUnderlineHint", style_underline_hint)
+        -- highlight("DiagnosticUnderlineInfo", style_underline_info)
+        -- highlight("DiagnosticUnderlineOk", style_underline_ok)
+        -- highlight("DiagnosticUnderlineWarn", style_underline_warning)
 
-        highlight("UfoFoldedBg", style_fold_line)
+        -- highlight("UfoFoldedBg", style_fold_line)
 
-        highlight("vimTodoListsDone", style_comment)
-        highlight("vimTodoListsNormal", style_normal)
-        highlight("vimTodoListsImportant", style_macro)
+        -- highlight("vimTodoListsDone", style_comment)
+        -- highlight("vimTodoListsNormal", style_normal)
+        -- highlight("vimTodoListsImportant", style_macro)
 
         -- PQF && DAP
 
-        highlightAll({"LspSagaDiagnosticBorder"}, style_normal)
+        -- highlightAll({"LspSagaDiagnosticBorder"}, style_normal)
 
-        highlightAll({"Error", "DiagnosticError"}, style_keyword)
-        highlightAll({"Directory", "DiagnosticInfo"}, style_function)
-        highlightAll({"DiagnosticWarn"}, style_special)
-        highlightAll({"DiagnosticHint"}, style_macro)
+        -- highlightAll({"Error", "DiagnosticError"}, style_keyword)
+        -- highlightAll({"Directory", "DiagnosticInfo"}, style_function)
+        -- highlightAll({"DiagnosticWarn"}, style_special)
+        -- highlightAll({"DiagnosticHint"}, style_macro)
 
-        highlightAll({"DiagnosticSignError", "DapSignStopped"}, style_sign_error)
-        highlightAll({"DiagnosticSignWarn"}, style_sign_warning)
-        highlightAll({"DiagnosticSignErrorNumber", "DapSignStoppedNumber"}, style_sign_error_fg)
-        highlightAll({"DiagnosticSignWarnNumber"}, style_sign_warning_fg)
+        -- highlightAll({"DiagnosticSignError", "DapSignStopped"}, style_sign_error)
+        -- highlightAll({"DiagnosticSignWarn"}, style_sign_warning)
+        -- highlightAll({"DiagnosticSignErrorNumber", "DapSignStoppedNumber"}, style_sign_error_fg)
+        -- highlightAll({"DiagnosticSignWarnNumber"}, style_sign_warning_fg)
 
-        highlightAll({"DapSignBreakpoint"}, style_breakpoint)
-        highlightAll({"DapSignBreakpointNumber"}, style_breakpoint_fg)
+        -- highlightAll({"DapSignBreakpoint"}, style_breakpoint)
+        -- highlightAll({"DapSignBreakpointNumber"}, style_breakpoint_fg)
 
-        highlight("LuaLineDiffAdd", style_string)
-        highlight("LuaLineDiffChange", style_special)
-        highlight("LuaLineDiffDelete", style_keyword)
+        -- highlight("LuaLineDiffAdd", style_string)
+        -- highlight("LuaLineDiffChange", style_special)
+        -- highlight("LuaLineDiffDelete", style_keyword)
 
-        highlight("LeapBackdrop", style_comment)
+        -- highlight("LeapBackdrop", style_comment)
 
         -- CMP
 
         -- https://github.com/hrsh7th/nvim-cmp/wiki/Menu-Appearance#how-to-get-types-on-the-left-and-offset-the-menu
-        highlightAll({"CmpItemAbbrDeprecated"}, style_comment)
-        highlightAll({"CmpItemAbbrMatch", "CmpItemAbbrMatchFuzzy", "PmenuSel"}, style_identifier)
-        highlightAll({"CmpItemMenu"}, style_comment)
-        highlightAll({"CmpItemKindText", "CmpItemKindField", "CmpItemKindValue", "CmpItemKindOperator", "CmpItemKindTypeParameter"}, style_cmp_normal)
-        highlightAll({"CmpItemKindSnippet", "CmpItemKindKeyword", "CmpItemKindUnit", "CmpItemKindEnum"}, style_cmp_keyword)
-        highlightAll({"CmpItemKindValue", "CmpItemKindEnumMember", "CmpItemKindColor", "CmpItemKindConstant", "CmpItemKindEvent"}, style_cmp_const)
-        highlightAll({"CmpItemKindFile", "CmpItemKindReference", "CmpItemKindFolder"}, style_cmp_string)
-        highlightAll({"CmpItemKindMethod", "CmpItemKindFunction", "CmpItemKindConstructor", "CmpItemKindProperty"}, style_cmp_function)
-        highlightAll({"CmpItemKindClass", "CmpItemKindStruct", "CmpItemKindInterface", "CmpItemKindModule"}, style_cmp_special)
+        -- highlightAll({"CmpItemAbbrDeprecated"}, style_comment)
+        -- highlightAll({"CmpItemAbbrMatch", "CmpItemAbbrMatchFuzzy", "PmenuSel"}, style_identifier)
+        -- highlightAll({"CmpItemMenu"}, style_comment)
+        -- highlightAll({"CmpItemKindText", "CmpItemKindField", "CmpItemKindValue", "CmpItemKindOperator", "CmpItemKindTypeParameter"}, style_cmp_normal)
+        -- highlightAll({"CmpItemKindSnippet", "CmpItemKindKeyword", "CmpItemKindUnit", "CmpItemKindEnum"}, style_cmp_keyword)
+        -- highlightAll({"CmpItemKindValue", "CmpItemKindEnumMember", "CmpItemKindColor", "CmpItemKindConstant", "CmpItemKindEvent"}, style_cmp_const)
+        -- highlightAll({"CmpItemKindFile", "CmpItemKindReference", "CmpItemKindFolder"}, style_cmp_string)
+        -- highlightAll({"CmpItemKindMethod", "CmpItemKindFunction", "CmpItemKindConstructor", "CmpItemKindProperty"}, style_cmp_function)
+        -- highlightAll({"CmpItemKindClass", "CmpItemKindStruct", "CmpItemKindInterface", "CmpItemKindModule"}, style_cmp_special)
 
-        highlight("QuickFixLine", {bg = "#3c3836", ctermfg = 8})
+        -- highlight("QuickFixLine", {bg = "#3c3836", ctermfg = 8})
 
         -- vim.illuminate
 
-        local illuminated_col = {bg = "#3c3836", ctermbg = 8}
-        local illuminated_nil = {}
+        -- local illuminated_col = {bg = "#3c3836", ctermbg = 8}
+        -- local illuminated_nil = {}
 
-        highlightAll({"IlluminatedWordText"}, illuminated_nil)
-        highlightAll({"IlluminatedWordRead", "IlluminatedWordWrite"}, illuminated_col)
-        highlight("ExtraWhitespace", {bg = "#502828", ctermbg = 1})
+        -- highlightAll({"IlluminatedWordText"}, illuminated_nil)
+        -- highlightAll({"IlluminatedWordRead", "IlluminatedWordWrite"}, illuminated_col)
+        -- highlight("ExtraWhitespace", {bg = "#502828", ctermbg = 1})
     end
 
     vim.cmd([[
-        sign define DiagnosticSignError text=E texthl=DiagnosticSignError linehl=DiagnosticSignError numhl=DiagnosticSignErrorNumber
-        sign define DiagnosticSignWarn text=W texthl=DiagnosticSignWarn linehl=DiagnosticSignWarn numhl=DiagnosticSignWarnNumber
-        sign define DiagnosticSignInfo text=I texthl=DiagnosticSignInfo linehl= numhl=DiagnosticSignInfo
-        sign define DiagnosticSignHint text=H texthl=DiagnosticSignHint linehl= numhl=DiagnosticSignHint
+        " sign define DiagnosticSignError text=E texthl=DiagnosticSignError linehl=DiagnosticSignError numhl=DiagnosticSignErrorNumber
+        " sign define DiagnosticSignWarn text=W texthl=DiagnosticSignWarn linehl=DiagnosticSignWarn numhl=DiagnosticSignWarnNumber
+        " sign define DiagnosticSignInfo text=I texthl=DiagnosticSignInfo linehl= numhl=DiagnosticSignInfo
+        " sign define DiagnosticSignHint text=H texthl=DiagnosticSignHint linehl= numhl=DiagnosticSignHint
 
-        sign define DapBreakpoint text=B texthl=DapSignBreakpoint linehl=DapSignBreakpoint numhl=DapSignBreakpointNumber
-        sign define DapStopped text=S texthl=DapSignStopped linehl=DapSignStopped numhl=DapSignStoppedNumber
+        " sign define DapBreakpoint text=B texthl=DapSignBreakpoint linehl=DapSignBreakpoint numhl=DapSignBreakpointNumber
+        " sign define DapStopped text=S texthl=DapSignStopped linehl=DapSignStopped numhl=DapSignStoppedNumber
 
-        hi! link @constant.builtin.d Constant
-        hi! link @lsp.type.macro.c Constant
+        " hi! link @constant.builtin.d Constant
+        " hi! link @lsp.type.macro.c Constant
     ]])
 end
 

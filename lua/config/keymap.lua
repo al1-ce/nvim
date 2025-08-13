@@ -46,6 +46,8 @@ noremap('n', "<End>",  keyfunc.lineEnd,  { desc = "Goes to end of line" })
 noremap('i', "<End>",  keyfunc.lineEnd,  { desc = "Goes to end of line" })
 noremap('v', "<End>",  keyfunc.lineEnd,  { desc = "Goes to end of line" })
 
+noremap("v", "*", '""y/<C-r>"<cr>', { desc = "Search for selected string" })
+noremap("v", "#", '""y?<C-r>"<cr>', { desc = "Search for selected string" })
 noremap("n", "n", "nzzzv", { desc = "Keep search centered" })
 noremap("n", "N", "Nzzzv", { desc = "Keep search centered" })
 
@@ -60,9 +62,9 @@ noremap("v", ">", ">gv", { desc = "Indent right and reselect" })
 noremap("v", "<", "<gv", { desc = "Indent left and reselect" })
 
 noremap("n", "<Del>", function() keyfunc.delete_char(0) end, { desc = "Delete but into black hole" })
-noremap("i", "<Del>", function() keyfunc.delete_char(0) end, { desc = "Delete but into black hole" })
+-- noremap("i", "<Del>", function() keyfunc.delete_char(0) end, { desc = "Delete but into black hole" })
 noremap("n", "<BS>",  function() keyfunc.delete_char(1) end, { desc = "Deletes into black hole" });
-noremap("i", "<BS>",  function() keyfunc.delete_char(1) end, { desc = "Deletes into black hole" });
+-- noremap("i", "<BS>",  function() keyfunc.delete_char(1) end, { desc = "Deletes into black hole" });
 noremap("v", "<BS>",  '"_x', { desc = "Deletes into black hole" });
 noremap("v", "<Del>", '"_x', { desc = "Deletes into black hole" });
 
@@ -73,8 +75,8 @@ noremap("v", "<Del>", '"_x', { desc = "Deletes into black hole" });
 noremap("n", "<leader>fs", "<cmd>exe v:count ? v:count .. 'b' : 'b' .. (bufloaded(0) ? '#' : 'n')<cr>", { desc = "[F]ile [S]wap" })
 
 noremap("n", "<leader>fe", "<cmd>enew<cr>",   { desc = "[F]ile [E]dit" })
-noremap("n", "<leader>q",  "<cmd>q<cr>",      { desc = "[Q]uits buffer" })
-noremap("n", "<leader>w",  "<CMD>update<CR>", { desc = "[W]rites buffer" })
+noremap("n", "<leader>q",  "<cmd>q!<cr>",      { desc = "[Q]uits buffer" })
+noremap("n", "<leader>w",  "<cmd>w!<cr>", { desc = "[W]rites buffer" })
 
 -- - ---------------------------------------------------------------------------- -
 -- -                               Quick navigation                               -
